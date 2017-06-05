@@ -160,9 +160,9 @@ int main(int argc, char** argv) {
     // Initialize matrix library.
     // Create canvas and apply GridTransformer.
     RGBMatrix *canvas = CreateMatrixFromOptions(matrix_options, runtime_options);
-    if (config.hasTransformer()) {
+    /*if (config.hasTransformer()) {
       canvas->ApplyStaticTransformer(config.getGridTransformer());
-    }
+    }*/
     canvas->Clear();
 
     // Initialize BCM functions and display capture class.

@@ -9,8 +9,8 @@
 # to configure the library for more special needs.  See the library's docs for
 # details on options:
 #   https://github.com/hzeller/rpi-rgb-led-matrix/blob/master/lib/Makefile
-export HARDWARE_DESC=adafruit-hat
-export USER_DEFINES=-DRGB_SLOWDOWN_GPIO=1
+#export HARDWARE_DESC=adafruit-hat
+export USER_DEFINES=-DRGB_SLOWDOWN_GPIO=2
 
 # Configure compiler and libraries:
 CXX = g++

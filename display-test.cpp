@@ -79,8 +79,8 @@ int main(int argc, char** argv) {
     // Create canvas and apply GridTransformer.
     RGBMatrix *canvas = CreateMatrixFromOptions(matrix_options, runtime_options);
 
-    int panel_rows = config.getParallelCount();
-    int panel_columns = config.getChainLength();
+    int panel_rows = config.getParallelCount()*2;
+    int panel_columns = config.getChainLength()/2;
     if (config.hasTransformer()) {
       GridTransformer grid = config.getGridTransformer();
       canvas->ApplyStaticTransformer(grid);
